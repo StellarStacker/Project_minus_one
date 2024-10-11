@@ -5,10 +5,10 @@ class Bankaccount{
 		this.balance=balance;
 	}
 	protected void deposit(int amount){
-		if(amount>0)	
+		if(amount>0){	
 			balance+=amount;
 			System.out.println("Deposit successfull");
-		else
+		}else
 			System.out.println("Amount cannot be negative");
 	}
 	protected void withdraw(int amount){
