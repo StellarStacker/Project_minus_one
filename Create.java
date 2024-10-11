@@ -2,6 +2,7 @@ import java.util.Scanner;
 class Create {
     Scanner sc;
     int age;
+    Bankaccount acc;
     String name,gender,branch;
     public Create(){
             sc=new Scanner(System.in);
@@ -20,7 +21,7 @@ class Create {
             }
     public void display(Object obj){
             if(obj instanceof Bankaccount){
-            Bankaccount acc=(Bankaccount) obj;
+            acc=(Bankaccount) obj;
             System.out.println("Name : "+name);
             System.out.println("Age : "+age);
             System.out.println("Gender : "+gender);
