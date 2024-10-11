@@ -26,4 +26,7 @@ class Bankaccount{
 	public int getbalance(){
 		return balance;
 	}
+	public void  checkbalance(){
+		System.out.println("Current balance is : "+balance );
+	}
 }
