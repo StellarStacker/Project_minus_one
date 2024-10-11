@@ -14,7 +14,7 @@ class Create {
             gender=sc.nextLine();
             System.out.println("Enter Your branch : ");
             branch=sc.nextLine();
-            System.out.println("Input validated");
+            System.out.println("Account created successfully");
             Bankaccount ob=new Bankaccount(1000);
             display(ob);
             }
@@ -29,7 +29,8 @@ class Create {
             }else  
                 System.out.println("Invalid bankaccount type");
     }
-    public static void main(String[] args) {
-        Create user1=new Create();
-    }    
+    public Bankaccount getobject(){
+        return acc;
+
+    } 
 }
