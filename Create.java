@@ -20,9 +20,10 @@ class Create{
             System.out.println("Enter the Bankname : ");
             bank_name=sc.nextLine();
             //push(age, name, age, branch, bank_name, acc_type);
-            System.out.println("Account created successfully");
-            Bankaccount ob=new Bankaccount(1000);
-            display(ob);
+            System.out.println("Account created successfully\n");
+            Bankaccount ob=new Bankaccount();
+            ob.setbalance(1000);
+            //display(ob);
             }
     public void display( Object obj){
             if(obj instanceof Bankaccount){
@@ -39,8 +40,11 @@ class Create{
             }else  
                 System.out.println("Invalid bankaccount type");
     }
-    public Bankaccount getobject(){
+    public Bankaccount getbankaccountobj(){
         return acc;
+    }
+    public Create getobject(){
+        return this;
 
     } 
 }

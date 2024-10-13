@@ -1,6 +1,13 @@
-
+import java.util.Scanner;
 class Bankaccount{
-	int balance;	
+	Scanner sc;
+	int balance;
+	public Bankaccount(){
+		sc=new Scanner(System.in);
+	}
+	public Bankaccount(Bankaccount ob){
+		this.balance=balance;
+	}
 	public Bankaccount(int balance){
 		this.balance=balance;
 		System.out.println("Amount created with balance"+balance);
